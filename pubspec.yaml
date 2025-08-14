@@ -1,0 +1,55 @@
+name: shoppe
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.8.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.5.1
+  flutter_bloc: ^8.1.5
+  get:
+
+  # UI and Styling
+  cached_network_image: ^3.3.1
+  flutter_svg: ^2.0.10+1
+  
+  # Networking
+  dio: ^5.4.3+1
+  
+  # Firebase & Authentication
+  firebase_core: ^3.1.0
+  firebase_auth: ^5.1.0
+  cloud_firestore: ^5.0.1
+  
+  # Payment Processing
+  flutter_stripe: ^10.1.1
+  
+  # Utilities
+  shared_preferences: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  
+  # Code Generation
+  build_runner: ^2.4.9
+  json_serializable: ^6.8.0
+  json_annotation: ^4.9.0
+   
+  google_fonts: ^6.2.1 # Or the latest version
+  intl_phone_field: ^3.2.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    
