@@ -1,4 +1,4 @@
-# 🛍 Shoppe — eCommerce UI Kit in Flutter
+# 🛍 Shoppe eCommerce UI Kit in Flutter
 
 Shoppe is a **modern eCommerce mobile application UI kit** built with Flutter.  
 It focuses on **clean design, smooth onboarding, and user-friendly interactions**, making it a great starting point for full-featured shopping apps.
