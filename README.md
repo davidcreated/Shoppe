@@ -30,6 +30,11 @@ It focuses on **clean design, smooth onboarding, and user-friendly interactions*
 <img width="422" height="863" alt="Screenshot 2025-08-14 235423" src="https://github.com/user-attachments/assets/f8d1ba9c-effe-46f6-9af9-72b98561e43f" />
 <img width="422" height="863" alt="Screenshot 2025-08-14 235414" src="https://github.com/user-attachments/assets/65513751-4ed4-48c9-a664-8259f466612c" />
 <img width="422" height="863" alt="Screenshot 2025-08-15 010357" src="https://github.com/user-attachments/assets/a32a7ca9-4c85-4c44-adc3-ad62934b24c0" />
+<img width="422" height="863" alt="Screenshot 2025-08-16 232508" src="https://github.com/user-attachments/assets/037dc825-a9a1-4552-90b6-1bda41b1f5d8" />
+<img width="422" height="863" alt="Screenshot 2025-08-16 232501" src="https://github.com/user-attachments/assets/416af0ef-c505-4757-8657-2730e206b055" />
+<img width="422" height="863" alt="Screenshot 2025-08-16 232459" src="https://github.com/user-attachments/assets/9f22182a-5036-4bae-9395-47b84faec622" />
+<img width="420" height="863" alt="Screenshot 2025-08-16 224901" src="https://github.com/user-attachments/assets/34ab0522-359a-4703-a034-cdaad649bc6d" />
+<img width="420" height="863" alt="Screenshot 2025-08-16 224852" src="https://github.com/user-attachments/assets/bc84fa74-18e7-49fa-879f-8bfccf93b757" />
 
 
 ---
