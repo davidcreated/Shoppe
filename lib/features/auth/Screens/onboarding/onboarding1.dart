@@ -7,7 +7,7 @@ import 'package:shoppe/shared/widgets/buttonwidgets.dart';
  // Assuming you placed the button here
 
 class OnboardingScreen extends StatelessWidget {
-  const OnboardingScreen({Key? key}) : super(key: key);
+  const OnboardingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

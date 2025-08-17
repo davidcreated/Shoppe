@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shoppe/core/constants/appcolors.dart';
 import 'package:shoppe/core/constants/apptextstyles.dart';
+import 'package:shoppe/core/routes/approutes.dart';
 import 'package:shoppe/features/auth/controllers/logincontroller.dart';
 import 'package:shoppe/shared/widgets/buttonwidgets.dart';
 
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -88,7 +89,9 @@ class LoginScreen extends StatelessWidget {
                     // "Next" Button
                     PrimaryButton(
                       text: 'Next',
-                      onPressed: controller.login,
+                      onPressed:  () {
+                        Get.toNamed(AppRoutes.verification);
+                      },
                     ),
                     const SizedBox(height: 20),
 
