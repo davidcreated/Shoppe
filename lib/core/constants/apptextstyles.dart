@@ -3,9 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:shoppe/core/constants/appcolors.dart';
 
 
-/// A class to hold all the text style constants for the app.
-/// This helps in maintaining a consistent typography.
-/// All styles use the 'Open Sans' font from Google Fonts.
 class AppTextStyles {
   // This class is not meant to be instantiated.
   AppTextStyles._();

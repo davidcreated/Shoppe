@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
 
-/// A class to hold all the color constants for the app.
-/// This helps in maintaining a consistent color scheme across the app.
-class AppColors {
-  // This class is not meant to be instantiated.
-  
 
-  // --- Primary Colors ---
-  /// The main brand color, a vibrant blue. Used for primary buttons,
-  /// links, and important UI elements.
+class AppColors {
+ 
   static const Color primary = Color(0xFF0D47A1); // A deep, strong blue
 
   /// A lighter shade of the primary color.

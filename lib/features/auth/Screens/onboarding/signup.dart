@@ -6,8 +6,6 @@ import 'package:shoppe/core/routes/approutes.dart';
 import 'package:shoppe/features/auth/controllers/createaccount.dart';
 import 'package:shoppe/shared/widgets/buttonwidgets.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
-import 'package:intl_phone_field/country_picker_dialog.dart';
-import 'package:intl_phone_field/phone_number.dart';
 
 class CreateAccountScreen extends StatelessWidget {
   const CreateAccountScreen({super.key});

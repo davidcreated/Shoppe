@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shoppe/core/constants/appcolors.dart';
+import 'package:shoppe/core/routes/approutes.dart';
 
 
 class PasswordController extends GetxController {
@@ -8,7 +9,8 @@ class PasswordController extends GetxController {
   final focusNode = FocusNode();
   final formKey = GlobalKey<FormState>();
 
-  final String userName = Get.arguments ?? 'User';
+  // Use a regular String, initialized with a safe default.
+  String userName = 'User';
 
   // Observable to track the error state for the UI
   final isPasswordIncorrect = false.obs;
@@ -16,6 +18,12 @@ class PasswordController extends GetxController {
   @override
   void onInit() {
     super.onInit();
+    // Safely assign the userName from arguments after the controller is initialized.
+    // This is more robust and prevents null errors during navigation or hot reloads.
+    if (Get.arguments != null && Get.arguments is String) {
+      userName = Get.arguments;
+    }
+
     // Add a listener to reset the error state when the user starts typing again
     passwordController.addListener(() {
       if (isPasswordIncorrect.value) {
@@ -24,41 +32,36 @@ class PasswordController extends GetxController {
     });
   }
 
-  /// Validates the entered password and proceeds.
+  /// Navigates to the home screen after password submission.
   void verifyPassword(String pin) {
     focusNode.unfocus();
+    print('Password submitted. Navigating to home...');
 
-    // Example validation
-    if (pin != 'password') {
-      // Set error state to true to trigger red dots in the UI
-      isPasswordIncorrect.value = true;
-      // Show the "Forgot Password" snackbar alert
-      showForgotPasswordSnackbar();
-      // Clear the input field after a short delay to allow the user to see the error
-      Future.delayed(const Duration(milliseconds: 800), () {
-        passwordController.clear();
-        focusNode.requestFocus(); // Bring focus back to the input
-      });
-    } else {
-      // Password is correct
-      isPasswordIncorrect.value = false;
-      print('Password Correct! Navigating to home...');
-      // Navigate to home screen
-      // Get.offAllNamed(AppRoutes.home);
-    }
+    // Navigate to the home screen, clearing the auth flow from the stack.
+    Get.offAllNamed(AppRoutes.welcome);
   }
 
-  /// Shows a quick snackbar for "Forgot Password".
+  /// Shows a snackbar with a button to navigate to the recovery screen.
   void showForgotPasswordSnackbar() {
     Get.snackbar(
       'Incorrect Password',
-      'Forgot your password? We can help with that.',
+      'Please try again or recover your password.',
       snackPosition: SnackPosition.BOTTOM,
       backgroundColor: AppColors.error,
       colorText: Colors.white,
       margin: const EdgeInsets.all(16),
-      duration: const Duration(seconds: 3),
+      duration: const Duration(seconds: 4),
       borderRadius: 12,
+      mainButton: TextButton(
+        onPressed: () {
+          // Navigate to the password recovery screen
+          Get.toNamed(AppRoutes.passwordRecovery);
+        },
+        child: const Text(
+          'RECOVER',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
+      ),
     );
   }
 

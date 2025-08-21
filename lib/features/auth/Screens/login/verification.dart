@@ -7,7 +7,7 @@ import 'package:shoppe/core/routes/approutes.dart';
 import 'package:shoppe/features/auth/controllers/verificationcontroller.dart';
 
 class VerificationScreen extends StatelessWidget {
-  const VerificationScreen({Key? key}) : super(key: key);
+  const VerificationScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

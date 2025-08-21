@@ -7,7 +7,7 @@ import 'package:shoppe/core/routes/approutes.dart';
 import 'package:shoppe/features/auth/controllers/passwordcontroller.dart';
 
 class PasswordScreen extends StatelessWidget {
-  const PasswordScreen({Key? key}) : super(key: key);
+  const PasswordScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -119,14 +119,14 @@ class PasswordScreen extends StatelessWidget {
                   // "Not you?" Link
                   GestureDetector(
                     onTap: () {
-                      // Navigate back to the login screen
-                      Get.offAllNamed(AppRoutes.login);
+                      
+                      Get.offAllNamed(AppRoutes.passwordRecovery);
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Not you?',
+                          'Forgot Password?',
                           style: AppTextStyles.bodyText,
                         ),
                         const SizedBox(width: 8),

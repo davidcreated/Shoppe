@@ -52,7 +52,7 @@ class OnboardingScreen extends StatelessWidget {
               // "Shoppe" Title
               Text(
                 'Shoppe',
-                style: AppTextStyles.headline1.copyWith(fontSize: 36),
+                style: AppTextStyles.headline1,
               ),
               const SizedBox(height: 15),
 
