@@ -35,6 +35,9 @@ It focuses on **clean design, smooth onboarding, and user-friendly interactions*
 <img width="422" height="863" alt="Screenshot 2025-08-16 232459" src="https://github.com/user-attachments/assets/9f22182a-5036-4bae-9395-47b84faec622" />
 <img width="420" height="863" alt="Screenshot 2025-08-16 224901" src="https://github.com/user-attachments/assets/34ab0522-359a-4703-a034-cdaad649bc6d" />
 <img width="420" height="863" alt="Screenshot 2025-08-16 224852" src="https://github.com/user-attachments/assets/bc84fa74-18e7-49fa-879f-8bfccf93b757" />
+<img width="422" height="863" alt="Screenshot 2025-08-22 005246" src="https://github.com/user-attachments/assets/b9a7899c-eae6-4164-a2c9-52f4596f20ed" />
+<img width="422" height="863" alt="Screenshot 2025-08-22 005235" src="https://github.com/user-attachments/assets/84cfb304-d7f0-470b-8edf-f8297afbd0db" />
+
 
 
 ---
