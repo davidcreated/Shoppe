@@ -33,7 +33,7 @@ class CreateAccountController extends GetxController {
       // e.g., AuthService.instance.createUser(email, password);
 
       // Navigate to the next screen on success
-      Get.offAllNamed(AppRoutes.home);
+      Get.offAllNamed(AppRoutes.profilepage);
     }
   }
 

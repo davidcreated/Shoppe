@@ -54,4 +54,16 @@ class AppTextStyles {
     fontWeight: FontWeight.w600, // Semi-bold
     color: AppColors.white,
   );
+
+  static final TextStyle headline3 = GoogleFonts.openSans(
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: AppColors.black,
+  );
+
+    static final TextStyle headline4 = GoogleFonts.openSans(
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+    color: AppColors.black,
+  );
 }

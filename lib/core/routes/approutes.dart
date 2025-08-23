@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:shoppe/features/auth/Screens/home/Profilepage.dart';
 import 'package:shoppe/features/auth/Screens/home/welcome_screen.dart';
 import 'package:shoppe/features/auth/Screens/login/login.dart';
 import 'package:shoppe/features/auth/Screens/login/passwordpage.dart';
@@ -9,14 +10,13 @@ import 'package:shoppe/features/auth/Screens/recovery/coderecovery.dart';
 import 'package:shoppe/features/auth/Screens/recovery/forgotpassword.dart';
 import 'package:shoppe/features/auth/Screens/recovery/newpasswordscreen.dart';
 
-
 class AppRoutes {
   // This class is not meant to be instantiated
   AppRoutes._();
 
   // --- Route Names ---
   static const String onboarding = '/onboarding';
-  static const String welcome = '/welcome'; // Add new route name
+  static const String welcome = '/welcome';
   static const String createAccount = '/create-account';
   static const String login = '/login';
   static const String verification = '/verification';
@@ -24,8 +24,7 @@ class AppRoutes {
   static const String passwordRecovery = '/password-recovery';
   static const String passwordRecoveryCode = '/password-recovery-code';
   static const String newPassword = '/new-password';
-  static const String home = '/home'; // Add home route for navigation
-
+  static const String profilepage = '/profile'; // ✅ fixed here
 
   // --- Route Pages ---
   static final List<GetPage> pages = [
@@ -33,8 +32,8 @@ class AppRoutes {
       name: onboarding,
       page: () => const OnboardingScreen(),
     ),
-     GetPage(
-      name: welcome, // Add the new page
+    GetPage(
+      name: welcome,
       page: () => const WelcomeScreen(),
     ),
     GetPage(
@@ -64,6 +63,10 @@ class AppRoutes {
     GetPage(
       name: newPassword,
       page: () => const NewPasswordScreen(),
+    ),
+    GetPage(
+      name: profilepage,
+      page: () => const Profilepage(), // ✅ ensure correct widget name
     ),
   ];
 }

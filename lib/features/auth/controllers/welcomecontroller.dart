@@ -25,7 +25,7 @@ class WelcomeController extends GetxController {
   void navigateToHome() {
     // Use offAllNamed to clear the navigation stack, so the user
     // can't go back to the onboarding/auth flow.
-    Get.offAllNamed(AppRoutes.home);
+    Get.offAllNamed(AppRoutes.profilepage);
   }
 
   @override

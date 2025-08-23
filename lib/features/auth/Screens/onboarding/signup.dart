@@ -31,6 +31,7 @@ class CreateAccountScreen extends StatelessWidget {
           ),
           SafeArea(
             child: SingleChildScrollView(
+
               padding: const EdgeInsets.symmetric(horizontal: 24.0),
               child: Form(
                 key: controller.formKey,
